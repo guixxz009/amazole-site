@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazole Esfoliante</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: black;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      background: radial-gradient(ellipse at bottom, #4e4e4e 0%, #000000 100%);
+      background-size: cover;
+      animation: stars 200s linear infinite;
+    }
+
+    .stars::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Starsinthesky.jpg/1920px-Starsinthesky.jpg');
+      background-size: cover;
+      opacity: 0.15;
+      animation: moveStars 90s linear infinite;
+    }
+
+    @keyframes moveStars {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-200px); }
+    }
+
+    header {
+      background: linear-gradient(to bottom, #003d1f, #001a0d);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #ffffff;
+      font-size: 2.5rem;
+    }
+
+    main {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 1rem 0;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .section h2 {
+      color: #15ff00;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .section p,
+    .section ul {
+      color: #ffffff;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .buttons a {
+      background-color: #00661a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 1.75rem 2.5rem;
+      border-radius: 1.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #00ff00;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: #a5a5a5;
+    }
+
+    .product-img {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 300px;
+    }
+
+    .materia-prima {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      margin-top: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 1rem;
+      padding: 4rem;
+      max-width: 900px;
+    }
+
+    .materia-prima img {
+      width: 450px;
+      border-radius: 0.5rem;
+    }
+
+    .materia-prima div {
+      flex: 1;
+    }
+
+    .materia-prima h3 {
+      color: #00ff00;
+      margin-bottom: 1.5rem;
+    }
+
+    .resultados-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .resultados-grid img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .resultados-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="background stars"></div>
+
+  <header>
+    <h1>Amazole Esfoliante</h1>
+  </header>
+
+  <main>
+    <div class="section">
+      <img src="img/Design-sem-nome-42-1-300x251.png" alt="Produto Amazole" class="product-img">
+      <h2>Sobre o Produto</h2>
+      <p>
+        O <strong>Amazole Esfoliante Clareador</strong> promove a renovação da pele, removendo impurezas e células mortas. Sua fórmula exclusiva oferece clareamento de manchas e hidratação, deixando a pele macia, uniforme e com brilho natural.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Como é Feito</h2>
+      <ul>
+        <li><strong>Niacinamida</strong> – Clareia manchas e melhora a textura da pele</li>
+        <li><strong>Vitamina C</strong> – Ilumina e combate radicais livres</li>
+        <li><strong>Cristais de Quartzo</strong> – Esfoliam suavemente e renovam a pele</li>
+      </ul>
+    </div>
+
+    <div class="buttons">
+      <a href="https://entrega.logzz.com.br/pay/memkg4k8m/1-frasco-12990">Compre 1 por R$129,90</a>
+      <a href="https://entrega.logzz.com.br/pay/memkg4k8m/2-frasco-16700">Compre 2 por R$167,00</a>
+      <a href="https://wa.me/556282086216">Fale no WhatsApp</a>
+    </div>
+
+    <div class="materia-prima">
+      <img src="img/arvore.png" alt="Árvore Pau-mulato">
+      <div>
+        <h3>Principal Matéria Prima</h3>
+        <p><strong>Pau-mulato (mulateiro)</strong><br>
+        O mulateiro (Calycophyllum spruceanum) é uma árvore nativa da Amazônia, conhecida há séculos pelas comunidades tradicionais da região. Chamado também de "árvore da juventude", seu caule se renova naturalmente — a casca antiga se solta e revela uma nova, simbolizando renovação e regeneração.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Resultados</h2>
+      <p>Veja abaixo resultados reais de pessoas que utilizaram o Amazole Esfoliante Clareador:</p>
+      <div class="resultados-grid">
+        <img src="img/resultado1.png" alt="Resultado 1">
+        <img src="img/resultado2.png" alt="Resultado 2">
+        <img src="img/resultado3.png" alt="Resultado 3">
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2025 Amazole. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
